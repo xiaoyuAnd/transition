@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            transition: all .3s;
+        }
+        
+        .one {
+            transform: translateX(50px);
+        }
+        
+        .twe {
+            transform: translate(50px, 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button id="button">按钮</button>
+    <script>
+        button.onclick = () => {
+            box.classList.add("one");
+            setTimeout(() => {
+                box.classList.add("twe");
+            }, 1000)
+        }
+    </script>
+
+</body>
+
+</html>
